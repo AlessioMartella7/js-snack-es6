@@ -16,7 +16,7 @@ Id  Name                Grades
 
 //creiamo un array con la lista studenti
 
-const newClass = [
+const newClassStudents = [
     {
         name: 'Marco della Rovere' ,
         id : 213,
@@ -53,3 +53,8 @@ const newClass = [
         Grades: 84,
     },
 ]
+
+//creo un nuovo array con tutti i nomi maiuscoli
+
+const upperName = newClassStudents.map( student => student.name.toUpperCase());
+console.log(upperName)
