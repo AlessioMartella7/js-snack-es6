@@ -14,3 +14,42 @@ Id  Name                Grades
 102 Piero della Francesca   50
 120 Francesca da Polenta    84 */
 
+//creiamo un array con la lista studenti
+
+const newClass = [
+    {
+        name: 'Marco della Rovere' ,
+        id : 213,
+        Grades: 78,
+    },
+    {
+        name: 'Paola Cortellessa' ,
+        id : 110,
+        Grades: 96,
+    },
+    {
+        name: 'Andrea Mantegna' ,
+        id : 250,
+        Grades: 48,
+    },
+    {
+        name: 'Gaia Borromini' ,
+        id : 145,
+        Grades: 74,
+    },
+    {
+        name: 'Luigi Grimaldello' ,
+        id : 196,
+        Grades: 68,
+    },
+    {
+        name: 'Piero della Francesca' ,
+        id : 102,
+        Grades: 50,
+    },
+    {
+        name: 'Francesca da Polenta' ,
+        id : 120,
+        Grades: 84,
+    },
+]
