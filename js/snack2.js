@@ -64,7 +64,16 @@ console.log(`
 
 // Creo una lista di tutti gli studenti che hanno un totale di voti superiore a 70
 
-const over70Grades = newClassStudents.filter( student => student.Grades > 70);
+const overGrades = newClassStudents.filter( student => student.Grades > 70);
 
 // Stampo la lista 
-over70Grades.forEach(student => console.log(student.name));
+overGrades.forEach(student => console.log('Studente con voto superiore a 70:',student.name));
+
+
+// Creo una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
+
+const overId = overGrades.filter( student => student.id > 120);
+
+//stampo la lista 
+overId.forEach (student => console.log('Studente con voto superiore a 70 e id superiore a 120:',student.name));
+ 
