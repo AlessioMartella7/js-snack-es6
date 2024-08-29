@@ -14,7 +14,7 @@ Id  Name                Grades
 102 Piero della Francesca   50
 120 Francesca da Polenta    84 */
 
-//creiamo un array con la lista studenti
+// Creo un array con la lista studenti
 
 const newClassStudents = [
     {
@@ -54,7 +54,15 @@ const newClassStudents = [
     },
 ]
 
-//creo un nuovo array con tutti i nomi maiuscoli
+// Creo un nuovo array con tutti i nomi maiuscoli
 
 const upperName = newClassStudents.map( student => student.name.toUpperCase());
-console.log(upperName)
+console.log(`
+    Elenco Studenti nuovo corso:
+    ${upperName}
+    `);
+
+// Creo una lista di tutti gli studenti che hanno un totale di voti superiore a 70
+
+const over70Grades = newClassStudents.filter( student => student.Grades > 70);
+console.log(over70Grades);
