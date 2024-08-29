@@ -65,4 +65,6 @@ console.log(`
 // Creo una lista di tutti gli studenti che hanno un totale di voti superiore a 70
 
 const over70Grades = newClassStudents.filter( student => student.Grades > 70);
-console.log(over70Grades);
+
+// Stampo la lista 
+over70Grades.forEach(student => console.log(student.name));
