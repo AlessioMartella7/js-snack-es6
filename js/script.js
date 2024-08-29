@@ -72,5 +72,8 @@ const guestList = [
         place: '10'
     },
 
-]
+];
+
+// stampo in console la lista invitati
+guestList.forEach((guest)=> console.log(guest));
 
