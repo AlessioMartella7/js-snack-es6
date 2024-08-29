@@ -69,7 +69,7 @@ const guestList = [
     {
         tableName: 'Tv Star',
         guestName: 'Fiorello',
-        place: '10'
+        place: '11'
     },
 
 ];
