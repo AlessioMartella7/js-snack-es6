@@ -13,4 +13,64 @@ Generiamo e stampiamo in console la lista per i segnaposto.
 
  */
 
-// 
+//creo un array con dentro gli oggetti e le rispettive chiavi
+
+const guestList = [
+    {
+        tableName: 'Holywood Stars',
+        guestName: 'Brad Pitt',
+        place: '1'
+    },
+    {
+        tableName: 'Holywood Stars',
+        guestName: 'Johnny Depp',
+        place: '2'
+    },
+    {
+        tableName: 'Holywood Stars',
+        guestName: 'Lady Gaga',
+        place: '3'
+    },
+    {
+        tableName: 'Ronaldos',
+        guestName: 'Cristiano Ronaldo',
+        place: '4'
+    },
+    {
+        tableName: 'Ronaldos',
+        guestName: 'Georgina Rodriguez',
+        place: '5'
+    },
+    {
+        tableName: 'Ferragnez',
+        guestName: 'Chiara Ferragni',
+        place: '6'
+    },
+    {
+        tableName: 'Clooneys',
+        guestName: 'George Clooney',
+        place: '7'
+    },
+    {
+        tableName: 'Clooneys',
+        guestName: 'Amal Clooney',
+        place: '8'
+    },
+    {
+        tableName: 'Ferragnez',
+        guestName: 'Fedez',
+        place: '9'
+    },
+    {
+        tableName: 'Tv Star',
+        guestName: 'Amadeus',
+        place: '10'
+    },
+    {
+        tableName: 'Tv Star',
+        guestName: 'Fiorello',
+        place: '10'
+    },
+
+]
+
