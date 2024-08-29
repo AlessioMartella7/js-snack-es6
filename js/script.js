@@ -75,5 +75,10 @@ const guestList = [
 ];
 
 // stampo in console la lista invitati
-guestList.forEach((guest)=> console.log(guest));
+guestList.forEach( guest => console.log(`
+        Nome tavolo: ${guest.tableName}
+        Nome dell'ospite: ${guest.guestName}
+        Posto occupato: ${guest.place}
+        `)
+    );
 
