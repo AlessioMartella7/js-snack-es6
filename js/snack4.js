@@ -11,12 +11,5 @@ const names = ['Giuventus','Torrino','Rioma', 'Lazie', 'Internos','Mailan']
 
 // creo una array con dentro i solo i nomi e le altre prop da compilare
 
-const teamData = names.map(name => {
-    const team ={
-        name,
-        points: 0,
-        fouls: 0,
-    }
-    return team
-})
+const teamData = names.map(name => ({name, points: 0, fouls: 0,}));
 console.log(teamData)
