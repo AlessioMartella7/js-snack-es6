@@ -13,14 +13,11 @@ const bikesNames = ['raptor','speedo','bolt','flash','fury']
 //creo una costante per stabilire la lunghezza dell'array
 const bikesNumber = bikesNames.length;
 
-
 //creo un array di oggetti per le biciclette ed il loro peso
 const bikesList = bikesNames.map(name => ({ name, weight: getRandomNumber(15, 25),})) ;
 
-
 // creo una variabile d'appoggio per il confronto
 let lightestBike = bikesList[0];
-
 
 //individuo la bici più leggera
 for (const bike of bikesList) {
