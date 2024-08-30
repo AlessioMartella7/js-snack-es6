@@ -14,20 +14,10 @@ const bikesNames = ['raptor','speedo','bolt','flash','fury']
 const bikesNumber = bikesNames.length;
 
 
-
 //creo un array di oggetti per le biciclette ed il loro peso
-const bikesList = bikesNames.map(name => {
-    const bike = {
-    name: name,
-    weight: getRandomNumber(15,25),
-    }
-    return bike;
-}) ;
+const bikesList = bikesNames.map(name => ({ name, weight: getRandomNumber(15, 25),})) ;
 
-
-console.log(bikesList
-
-)
+console.log(bikesList)
 
 
 
