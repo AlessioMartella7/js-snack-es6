@@ -17,7 +17,18 @@ const bikesNumber = bikesNames.length;
 //creo un array di oggetti per le biciclette ed il loro peso
 const bikesList = bikesNames.map(name => ({ name, weight: getRandomNumber(15, 25),})) ;
 
-console.log(bikesList)
+
+// creo una variabile d'appoggio per il confronto
+let lightestBike = bikesList[0];
 
 
+//individuo la bici più leggera
+for (const bike of bikesList) {
+    if (bike.weight < lightestBike.weight) {
+        lightestBike = bike;
+    } 
+}
 
+//stampo in console
+const { name, weight } = lightestBike;
+console.log(`La bicicletta più leggera è la ${name} con un peso di ${weight} kg.`);
