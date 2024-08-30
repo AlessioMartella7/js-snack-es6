@@ -76,4 +76,3 @@ const overId = overGrades.filter( student => student.id > 120);
 
 //stampo la lista 
 overId.forEach (student => console.log('Studente con voto superiore a 70 e id superiore a 120:',student.name));
- 
