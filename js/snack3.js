@@ -5,15 +5,7 @@ Stampare in console la bici con peso minore utilizzando destructuring e template
 
 
 //creo una funzione per generare il peso delle biciclette 
-const getRandomNumber = (min, max, totNumb) => {
-    const numbers = [];
-    while(numbers.length < totNumb) {
-    const randomNumber = Math.floor(Math.random() * (max +1 -min)) + min;
-    if (!numbers.includes(randomNumber)) 
-    numbers.push(randomNumber);
-    }
-    return numbers
-}
+const getRandomNumber = (min, max) => (Math.floor(Math.random() * (max +1 -min)) + min);
 
 //creo un array con i nomi delle biciclette
 const bikesNames = ['raptor','speedo','bolt','flash','fury']
@@ -21,11 +13,21 @@ const bikesNames = ['raptor','speedo','bolt','flash','fury']
 //creo una costante per stabilire la lunghezza dell'array
 const bikesNumber = bikesNames.length;
 
-// genero il peso delle biciclette 
-const weight = getRandomNumber(15, 25, bikesNumber);
+
 
 //creo un array di oggetti per le biciclette ed il loro peso
-const bikesList = bikesNames.map(name => ({ name, weight})) ;
+const bikesList = bikesNames.map(name => {
+    const bike = {
+    name: name,
+    weight: getRandomNumber(15,25),
+    }
+    return bike;
+}) ;
 
 
-console.log(bikesList)
+console.log(bikesList
+
+)
+
+
+
