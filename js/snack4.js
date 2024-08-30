@@ -9,23 +9,17 @@ Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengo
 const getRandomNumber = (min, max) => (Math.floor(Math.random() * (max +1 -min)) + min);
 
 // creo un array di squadre di calcio
-
 const names = ['Giuventus','Torrino','Rioma', 'Lazie', 'Internos','Mailan']
 
 // creo una array con dentro i solo i nomi e le altre prop da compilare
-
 const teamData = names.map(name => ({name, punti: 0, falli: 0,}));
  
 // aggiungiamo falli e punti al nostro array
-
 teamData.forEach(team => {
     team.punti = getRandomNumber(3,90);
     team.falli = getRandomNumber (10,100);
 })
 
-console.log(teamData)
-
 //Creiamo un nuovo array i cui elementi sono composti dai nomi e dai falli subiti
-
 const teamFouls = teamData.map(({name, falli}) => ({name, falli}));
 console.log(teamFouls)
