@@ -22,4 +22,15 @@ teamData.forEach(team => {
     team.punti = getRandomNumber(3,90);
     team.falli = getRandomNumber (10,100);
 })
+
 console.log(teamData)
+
+
+//Creiamo un nuovo array i cui elementi sono composti dai nomi e dai falli subiti
+
+const teamFouls = teamData.map(team =>{
+ const {name, falli} = team
+ return {name, falli}
+
+})
+console.log(teamFouls)
