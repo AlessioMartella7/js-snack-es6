@@ -25,12 +25,7 @@ teamData.forEach(team => {
 
 console.log(teamData)
 
-
 //Creiamo un nuovo array i cui elementi sono composti dai nomi e dai falli subiti
 
-const teamFouls = teamData.map(team =>{
- const {name, falli} = team
- return {name, falli}
-
-})
+const teamFouls = teamData.map(({name, falli}) => ({name, falli}));
 console.log(teamFouls)
